@@ -1,36 +1,27 @@
-# Seleção Dev Java
-Se você chegou até aqui é porque se interessou em fazer parte do nosso quadro de funcionarios. Como temos muitas oportunidades para você colocar a mão na massa, queremos ver como você se sai com o cenário abaixo, por meio do qual conseguiremos avaliar várias de suas competências.
 
-## A demanda
-Deverá ser criada uma aplicação de cadastro de pessoas:
+## Cadastro de Pessoa
 
 ###  1) Back-end
-A aplicação, a ser desenvolvida em Java, deverá expor uma API de cadastro, alteração, remoção e consulta de pessoas com as seguintes informações:
- - Nome - obrigatório
- - Sexo
- - E-mail - não obrigatório, deve ser validado caso preenchido
- - Data de Nascimento - obrigatório, deve ser validada
- - Naturalidade
- - Nacionalidade
- - CPF - obrigatório, deve ser validado (formato e não pode haver dois cadastros com mesmo cpf)
-
+Tecnologias usadas:
+ - Intellij como IDE;
+ - Spring-boot 2.1.18;
+ - Maven 3.6.2;
+ - Testes Unitários e de Integração com JUnit e Mockito;
+ - MySQL;
+ 
 ### 2) Front-end
-A aplicação deverá ser acessível via navegador e possuir uma tela com formulário.
-Não há restrição em relação à tecnologia para o desenvolvimento do frontend.
+ - Angular CLI 8.3.18;
+ - NodeJs 12.13.0
+ - BootStrap 4;
+ - VSCode como IDE;
 
 ### 3) Instalação
-Um manual com as instruções de instalação do projeto deve ser produzido. O mesmo ainda deve conter os endpoints disponiveis para consumo.
+Certifique-se de usar as versões mais recentes das tecnologias de Front, enquanto as de Back podem ser usadas as versões citadas acima;
 
-### 5) Código fonte
-A aplicação deverá estar disponível no github com o código fonto do projeto desenvolvido.
+### 4) Usando o Back-end:
+ - Crie o schema selecaojava no banco MySQL;
+ - Use o maven para adicionar as dependências ao projeto;
+ - Dê start no projeto Banck-end 
 
-## Extras
-1) Teste de integração da API em linguagem de sua preferência;
-2) A API deverá conter documentação (Javadoc );
-3) Versão 2 da API que deve incluir endereço da pessoa como dado obrigatório. Versão 1 deve continuar funcionando.
-
-## Prazo e retorno
-Isso será combinado com quem você fez a entrevista. Você terá tempo para entender o cenário e nos retornar um prazo.
-Lembre-se: Prazo dado é prazo cumprido.
-
-Boa sorte!
+### 4) Usando o Front-end:
+ - Abra a pasta no VSCode, ou entre pelo terminal, e use os comandos npm install, depois npm update, ng update e, por último, npm start para iniciar o projeto;
