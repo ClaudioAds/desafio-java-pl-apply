@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+</head>
+<div class="container">
+        <nav class="navbar navbar-expand-sm bg-light navbar-light">
+                <!-- Links -->
+                <ul class="navbar-nav">
+                        <h2><b>Cadastro de Pessoas</b></h2>
+                </ul>
+        </nav>
+        <router-outlet></router-outlet>
+</div>
+
+<body>
+        <div class="container">
+
+                <form (ngSubmit)="processForm()">
+                        <div class="form group">
+                                <label for="nome">Nome</label>
+                                <input type="text" name="nome" class="form-control" [(ngModel)]="user.nome" required>
+                        </div>
+                        <div class="form group">
+                                <label for="cpf">CPF</label>
+                                <input type="text" name="cpf" class="form-control" [(ngModel)]="user.cpf" required>
+                        </div>
+                        <div class="form group">
+                                <label for="email">Email</label>
+                                <input type="text" name="email" class="form-control" [(ngModel)]="user.email">
+                        </div>
+                        <div class="form group">
+                                <label for="sexo">Sexo</label>
+                                <input type="text" name="sexo" class="form-control" [(ngModel)]="user.sexo">
+                        </div>
+                        <div class="form group">
+                                <label for="datanascimento">Data de Nascimento</label>
+                                <input type="text" name="datanascimento" placeholder="Ano-Mês-Dia" class="form-control"
+                                        [(ngModel)]="user.datanascimento">
+                        </div>
+                        <div class="form group">
+                                <label for="naturalidade">Naturalidade</label>
+                                <input type="text" name="naturalidade" class="form-control"
+                                        [(ngModel)]="user.naturalidade">
+                        </div>
+                        <div class="form group">
+                                <label for="nacionalidade">Nacionalidade</label>
+                                <input type="text" name="nacionalidade" class="form-control"
+                                        [(ngModel)]="user.nacionalidade">
+                        </div>
+                        <br>
+                        
+
+                        <fieldset>
+                                <h2>Endereco</h2>
+                                <hr>
+                                <div class="form group">
+                                        <label for="nacionalidade">Região</label>
+                                        <input type="text" name="nacionalidade" class="form-control"
+                                                [(ngModel)]="user.nacionalidade">
+                                </div>
+                                <div class="form group col3">
+                                        <label for="nacionalidade">Estado</label>
+                                        <select id="estado" name="estado" [(ngModel)]="user.nacionalidade">
+                                                <option value="AC">Acre</option>
+                                                <option value="AL">Alagoas</option>
+                                                <option value="AP">Amapá</option>
+                                                <option value="AM">Amazonas</option>
+                                                <option value="BA">Bahia</option>
+                                                <option value="CE">Ceará</option>
+                                                <option value="DF">Distrito Federal</option>
+                                                <option value="ES">Espírito Santo</option>
+                                                <option value="GO">Goiás</option>
+                                                <option value="MA">Maranhão</option>
+                                                <option value="MT">Mato Grosso</option>
+                                                <option value="MS">Mato Grosso do Sul</option>
+                                                <option value="MG">Minas Gerais</option>
+                                                <option value="PA">Pará</option>
+                                                <option value="PB">Paraíba</option>
+                                                <option value="PR">Paraná</option>
+                                                <option value="PE">Pernambuco</option>
+                                                <option value="PI">Piauí</option>
+                                                <option value="RJ">Rio de Janeiro</option>
+                                                <option value="RN">Rio Grande do Norte</option>
+                                                <option value="RS">Rio Grande do Sul</option>
+                                                <option value="RO">Rondônia</option>
+                                                <option value="RR">Roraima</option>
+                                                <option value="SC">Santa Catarina</option>
+                                                <option value="SP">São Paulo</option>
+                                                <option value="SE">Sergipe</option>
+                                                <option value="TO">Tocantins</option>
+                                                <option value="EX">Estrangeiro</option>
+                                            </select> 
+                                </div>
+                        </fieldset>
+                        <input type="submit" value="Salvar" class="btn btn-success ">
+                </form>
+        </div>
+</body>
+
+</html>

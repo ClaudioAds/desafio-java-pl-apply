@@ -1,0 +1,32 @@
+<div class="table-responsive">
+
+    <table class="table">
+        <thead class="thead-dark">
+            <th>Id</th>
+            <th>Nome</th>
+            <th>CPF</th>
+            <th>Email</th>
+            <th>Sexo</th>
+            <th>Data Nascimento</th>
+            <th>Naturalidade</th>
+            <th>Nacionalidade</th>
+            <th>Operations </th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let user of users">
+                <td>{{user.id}}</td>
+                <td>{{user.nome}}</td>
+                <td>{{user.cpf}}</td>
+                <td>{{user.email}}</td>
+                <td>{{user.sexo}}</td>
+                <td>{{user.datanascimento}}</td>
+                <td>{{user.naturalidade}}</td>
+                <td>{{user.nacionalidade}}</td>                
+                <td><button class="btn btn-danger" (click)="deleteUser(user)">Delete</button>
+                    <button class="btn btn-primary" (click)="updateUser(user)">Edit</button></td>
+
+            </tr>
+        </tbody>
+    </table>
+    <button class="btn btn-primary" (click)="newUser()">Cadastrar Pessoa</button>
+</div>
